@@ -257,8 +257,8 @@ public void scheduleVideoConvert(String path, File dest) {
         long startTime = -1;
         long endTime = -1;
 
-        int resultWidth = 640;
-        int resultHeight = 360;
+        int resultWidth = Integer.valueOf(width);
+        int resultHeight = Integer.valueOf(height);
 
         int rotationValue = Integer.valueOf(rotation);
         int originalWidth = Integer.valueOf(width);
